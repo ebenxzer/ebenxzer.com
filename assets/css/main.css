@@ -61,7 +61,7 @@ a:hover {
 }
 
 /* iPhone 7+ */
-@media only screen and (max-width: 736px) {
+@media only screen and (min-width: 375px) and (max-width: 736px) {
   body {
     background-color: #1e1e1e;
     color: #fff;
