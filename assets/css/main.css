@@ -44,8 +44,24 @@ a:hover {
   line-height: 40px;
 }
 
-/* phone */
+/* iPhone SE */
 @media only screen and (max-width: 568px) {
+  body {
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .footer {
+    background-color: inherit;
+  }
+}
+
+/* iPhone 7+ */
+@media only screen and (max-width: 736px) {
   body {
     background-color: #1e1e1e;
     color: #fff;
