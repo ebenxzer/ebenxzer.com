@@ -45,47 +45,27 @@ a:hover {
 }
 
 /* iPhone SE */
-<<<<<<< HEAD
 @media only screen
   and (min-device-width: 320px)
-  and (min-width: 320px)
-  and (max-device-width: 568px)
-  and (max-width: 568px) {
+  and (max-device-width: 568px) {
   body {
     background-color: #1e1e1e;
     color: #fff;
   }
-=======
-@media only screen and (min-device-width: 320px) 
-  and (max-device-width: 568px) {
-    body {
-      background-color: #1e1e1e;
-      color: #fff;
-    }
->>>>>>> parent of cdce990... Removed iPhone SE breakpoint for testing
-
+  
   a {
     color: inherit;
   }
 
-<<<<<<< HEAD
   .footer {
     background-color: inherit;
   }
 }
-=======
-    .footer {
-      background-color: inherit;
-    }
-  }
->>>>>>> parent of cdce990... Removed iPhone SE breakpoint for testing
 
 /* iPhone 7+ */
 @media only screen
   and (min-device-width: 375px)
-  and (min-width: 375px)
-  and (max-device-width: 736px)
-  and (max-width: 736px) {
+  and (max-device-width: 736px) {
   body {
     background-color: #1e1e1e;
     color: #fff;
