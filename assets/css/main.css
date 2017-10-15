@@ -64,6 +64,8 @@ a:hover {
 
   .footer {
     background-color: inherit;
+    bottom: auto;
+    position: absolute;
   }
 }
 
@@ -87,5 +89,7 @@ a:hover {
 
   .footer {
     background-color: inherit;
+    bottom: auto;
+    position: absolute;
   }
 }
