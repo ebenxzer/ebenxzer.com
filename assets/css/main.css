@@ -49,7 +49,7 @@ a:hover {
   and (min-device-width: 320px)
   and (max-device-width: 568px) {
   body {
-    background-color: #1e1e1e;
+    background-color: #111;
     color: #fff;
   }
   
@@ -74,7 +74,7 @@ a:hover {
   and (min-device-width: 375px)
   and (max-device-width: 736px) {
   body {
-    background-color: #1e1e1e;
+    background-color: #111;
     color: #fff;
   }
 
