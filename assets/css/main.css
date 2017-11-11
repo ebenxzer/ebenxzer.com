@@ -19,6 +19,7 @@ a:hover {
 }
 
 .article-text {
+  color: #323232;
   font-family: Baskerville, serif;
 }
 
@@ -45,7 +46,6 @@ body {
 }
 
 .container-article {
-  color: #323232;
   margin: 0 auto;
   max-width: 756px;
   padding: 100px 32px 0;
