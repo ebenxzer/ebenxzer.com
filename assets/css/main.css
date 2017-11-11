@@ -33,6 +33,11 @@ a:hover {
   text-decoration: none;
 }
 
+.inactive {
+  color: #bebebe;
+  border-bottom: none;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
