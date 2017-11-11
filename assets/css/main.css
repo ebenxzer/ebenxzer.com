@@ -122,6 +122,10 @@ body {
     bottom: auto;
     position: absolute;
   }
+    
+  h3 {
+    color: #323232;
+  }
 }
 
 /* iPhone 7+ */
@@ -153,5 +157,9 @@ body {
     background-color: inherit;
     bottom: auto;
     position: absolute;
+  }
+    
+  h3 {
+    color: #323232;
   }
 }
