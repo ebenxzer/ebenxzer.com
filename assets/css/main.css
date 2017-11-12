@@ -52,12 +52,12 @@ body {
 }
 
 .cover-photo {
-  max-width: 350px;
+  width: 350px;
   padding: 150px 0;
 }
 
 #doc-mate {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 #doc-mate-gif {
@@ -81,7 +81,7 @@ body {
 .img-center {
   display: block;
   margin: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .inactive {
