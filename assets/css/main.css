@@ -39,6 +39,8 @@ body {
 }
 
 .container {
+  margin: auto;
+  max-width: 960px;
   padding: 0 32px;
 }
 
@@ -65,11 +67,15 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #fafafa;
   color: #aaa;
   font-size: 14px;
   line-height: 40px;
   text-align: center;
+}
+
+#footer-home {
+  position: fixed;
+  bottom: 0;
 }
 
 #goodfoot-bg {
