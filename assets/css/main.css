@@ -19,7 +19,8 @@ a:hover {
 
 .article-text {
   color: #323232;
-  font-family: Georgia, serif;
+  font-family: Georgia, Baskerville, serif;
+  font-size: 20px;
 }
 
 body {
