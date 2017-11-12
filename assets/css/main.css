@@ -67,6 +67,10 @@ body {
   background-color: #171a23;
 }
 
+#egg {
+  width: 24px;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -82,6 +86,10 @@ body {
   bottom: 0;
 }
 
+#full-burger {
+  font-size: 18px;
+}
+
 #goodfoot-bg {
   background-color: #d3492d;
 }
@@ -94,6 +102,10 @@ body {
 
 .inactive {
   color: #969696;
+}
+
+.navbar-default {
+  background-color: #fff;
 }
 
 .white-bg {
@@ -115,10 +127,11 @@ body {
     padding-bottom: 100px;
   }
 
-  #doc-mate {
+  /* comment out bc of bottom nav
+    #doc-mate {
     margin-bottom: 50px;
     width: 100%;
-  }
+  }*/
 
   .footer {
     background-color: inherit;
