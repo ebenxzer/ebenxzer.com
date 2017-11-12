@@ -18,7 +18,7 @@ a:hover {
 }
 
 a.inactive:hover {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .article-text {
@@ -94,7 +94,6 @@ body {
 
 .inactive {
   color: #969696;
-  border-bottom: none;
 }
 
 .white-bg {
