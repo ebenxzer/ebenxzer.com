@@ -17,6 +17,10 @@ a:hover {
   text-decoration: underline;
 }
 
+a.inactive:hover {
+text-decoration: hover;
+}
+
 .article-text {
   color: #323232;
   font-family: Georgia, Baskerville, serif;
