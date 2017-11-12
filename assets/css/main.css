@@ -57,10 +57,7 @@ body {
 }
 
 #doc-mate {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 #doc-mate-gif {
