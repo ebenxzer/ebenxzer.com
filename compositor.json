@@ -1,0 +1,90 @@
+{
+  "name": "ebenxzer/ebenxzer.com",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "master",
+  "style": {
+    "name": "Brutalist",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BasicHeader",
+      "article": "article/MarkdownArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+    "heading": {},
+    "typeScale": [
+      48,
+      32,
+      20,
+      18,
+      16,
+      14,
+      12
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "fluid": true
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/ebenxzer/ebenxzer.com",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "ebenxzer.com",
+      "subhead": "A simple version of my portfolio.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "ebenxzer.com: A simple version of my portfolio.",
+          "url": ""
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "ebenxzer",
+          "repo": "ebenxzer.com"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>This is a simple version of my <a href=\"www.ebenezergavieres.com\">portfolio</a>.</p>\n<p>I needed to update my website, and get back into coding. This serves as the perfect project for me to do both.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/ebenxzer/ebenxzer.com",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/ebenxzer",
+          "text": "ebenxzer"
+        }
+      ]
+    }
+  ]
+}
