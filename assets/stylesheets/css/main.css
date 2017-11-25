@@ -1,51 +1,48 @@
-#ebby {
-  font-weight: bold;
-}
-
 #TDA {
   z-index: 100;
   position: absolute;
 }
 
 a {
-  color: #5a69e6;
+  color: #FFA60B;
   text-decoration: none;
 }
 
 a:hover {
-  color: #5a69e6;
+  color: #FFA60B;
   text-decoration: underline;
 }
-
 a.inactive:hover {
   text-decoration: none;
 }
 
+a.navbar-brand {
+  border-bottom: none;
+}
+
+a.dropdown-toggle {
+  border-bottom: none;
+}
+
 .article-text {
   color: #323232;
-  font-family: Garamond, Georgia, serif;
-  font-size: 20px;
+  font-family: Georgia, Baskerville, serif;
+  font-size: 20px
 }
 
 body {
-  background-color: #f4f5f4;
+  background-color: #ffffeb;
 }
 
 #body-bag {
-  padding-top: 150px;
+  padding: 150px;
   padding-bottom: 100px;
 }
 
 .big-text {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 24px;
-  line-height: 32px
-}
-
-.container {
-  margin: auto;
-  max-width: 960px;
-  padding: 0 32px;
+  line-height: 32px;
 }
 
 .container-article {
@@ -59,24 +56,29 @@ body {
   padding: 150px 0;
 }
 
-#doc-mate {
+/*#doc-mate {
   margin-bottom: 50px;
-}
+}*/
 
 #doc-mate-gif {
   background-color: #171a23;
 }
 
+#ebby {
+  font-size: 32px;
+  font-weight: bold;
+}
+
 #egg {
-  vertical-align: 5%;
+  margin-bottom: 0.25em;
   width: 24px;
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: auto;
   width: 100%;
-  color: #aaa;
+  color: #323232;
   font-size: 14px;
   line-height: 40px;
   text-align: center;
@@ -97,54 +99,82 @@ body {
 
 .img-center {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   max-width: 100%;
 }
 
 .inactive {
   color: #969696;
+  border-bottom: none;
 }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .white-bg {
   background-color: #fff !important;
 }
 
-/* iPhone SE & 7+*/
+/* iPhone SE */
 @media only screen
   and (min-device-width: 320px)
   and (min-width: 320px)
-  and (max-device-width: 736px)
-  and (max-width: 736px) {
-  .article-text {
-    font-family: Georgia, serif;
-    }
-    
+  and (max-device-width: 568px)
+  and (max-width: 568px) {
   .big-text {
     font-size: 20px;
   }
 
   #body-bag {
-    padding-top: 50px;
+    padding: 50px;
     padding-bottom: 100px;
   }
 
-  /* comment out bc of bottom nav
-    #doc-mate {
+  /*#doc-mate {
     margin-bottom: 50px;
     width: 100%;
   }*/
 
   .footer {
-    background-color: inherit;
     bottom: auto;
     position: absolute;
     text-align: center;
   }
-    
+
+  h3 {
+    color: #323232;
+  }
+}
+
+/* MOBILE VIEWPORT ON LOCAL WEB*/
+@media only screen
+  and (min-width: 375px)
+  and (max-width: 736px) {
+  .big-text {
+    font-size: 20px;
+  }
+
+  body {
+    background-color: #ffffeb;
+  }
+
+  #body-bag {
+    padding: 50px;
+    padding-bottom: 100px;
+  }
+
+  /*#doc-mate {
+    margin-bottom: 50px;
+    width: 100%;
+  }*/
+
+  .footer {
+    bottom: auto;
+    position: absolute;
+    text-align: center;
+  }
+
   h3 {
     color: #323232;
   }
