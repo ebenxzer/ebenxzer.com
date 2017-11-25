@@ -23,7 +23,7 @@ a.inactive:hover {
 
 .article-text {
   color: #323232;
-  font-family: Georgia, Baskerville, serif;
+  font-family: Garamond, Georgia, serif;
   font-size: 20px;
 }
 
@@ -119,6 +119,10 @@ body {
   and (min-width: 320px)
   and (max-device-width: 736px)
   and (max-width: 736px) {
+  .article-text {
+    font-family: Georgia, serif;
+    }
+    
   .big-text {
     font-size: 20px;
   }
