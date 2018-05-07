@@ -1,142 +1,219 @@
-#TDA {
-  z-index: 100;
-  position: absolute;
+/* RED OUTLINE EVERYWHERE 
+* {
+	outline: 1px solid red !important;
+} */
+
+* {
+	color: #323232;
+	font-family: Helvetica Neue, sans-serif;
+	letter-spacing: 0.5px;
+	line-height: 1;
+	margin: 0 !important;
 }
+
+/* SPACING */
+.pto-h {
+	padding-top: 8px;
+}
+
+.pto {
+	padding-top: 16px;
+}
+
+.ptn {
+	padding-top: none;
+}
+
+.ps {
+	padding: 0 16px;
+}
+
+.pts {
+	padding: 1em 16px;
+}
+
+/* HEADERS */
+.eg-h1 {
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.eg-h4 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.head-area {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.description {
+	text-align: right;
+}
+
+.bio {
+	font-size: 16px;
+}
+
+.bl {
+	color: #0D68AB;
+	text-decoration: underline;
+}
+
+.body {
+	font-size: 14px;
+}
+
+.hashtag {
+	color: #969696;
+	font-size: 12px;
+}
+
+#navigation {
+	background-color: white;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	height: 48px;		
+	padding: 16px;
+}
+
+.nav-link {
+	padding: 0 16px 0 0 !important;
+}
+
+.navbar-nav {
+	justify-content: space-between;
+}
+
+.even-nav {
+	display: grid;
+}
+
+#header, .navbar-expand, .navbar-nav, .navbar-brand, .nav-link {
+	padding: 0;
+}
+
+/* .nav-item {
+	padding-right: 16px;
+} */
 
 a {
-  color: #FFA60B;
-  text-decoration: none;
+	color: #969696;
 }
 
-a:hover {
-  color: #FFA60B;
-  text-decoration: underline;
-}
-a.inactive:hover {
-  text-decoration: none;
+a:active {
+	color: black;
 }
 
-a.navbar-brand {
-  border-bottom: none;
+::selection {
+	background-color: black;
+	color: white;
 }
 
-a.dropdown-toggle {
-  border-bottom: none;
+.main {
+	background-color: #f0f1f2;
+	margin-bottom: 34px !important;
 }
 
-.article-text {
-  color: #323232;
-  font-family: Georgia, Baskerville, serif;
-  font-size: 20px
+.title-link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-body {
-  background-color: #ffffeb;
+.half-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 16px;
 }
 
-#body-bag {
-  padding: 150px;
-  padding-bottom: 100px;
+.thumbnail {
+	border: 1px solid black;
+	margin-bottom: 0.5rem !important;
 }
 
-.big-text {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  line-height: 32px;
+.square {
+	width: 100%;
 }
 
-.container-article {
-  margin: 0 auto;
-  max-width: 756px;
-  padding: 50px 32px 0;
+.square:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
 }
 
-.cover-photo {
-  width: 350px;
-  padding: 150px 0;
+.content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
-/*#doc-mate {
-  margin-bottom: 50px;
-}*/
-
-#doc-mate-gif {
-  background-color: #171a23;
+.footy {
+	font-size: 12px;
+	height: 34px;
+	margin-bottom: 48px !important;
+	padding-bottom: 48px;
+	text-align: center;
 }
 
-#ebby {
-  font-size: 32px;
-  font-weight: bold;
+
+
+/* MODIFIED MEDIA QUERIES */
+/* SMALL DEVICES  */
+@media (max-width: 567px) {
+	/* FIXED BOTTOM NAV */
+	#navigation {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1020;
+	}
+	
+	/* SCROLL THE NAV */
+	.navbar-nav-scroll {
+		white-space: nowrap;
+		overflow-x: auto;
+		max-width: 100%;
+	}
+	
+	.head-area {
+		display: flex;
+		flex-direction: column;
 }
 
-#egg {
-  margin-bottom: 0.25em;
-  width: 24px;
+	.description {
+		text-align: left;
+	}
+	
+	/* 2-COLUMN GRID */
+	.half-grid {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  color: #323232;
-  font-size: 14px;
-  line-height: 40px;
-  text-align: center;
-}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 568px) {
+	/* #navigation {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 1020;
+	} */
+	
+	.navbar {
+		display: inline;
+	}
 
-#full-burger {
-  font-size: 18px;
-}
+	.even-nav {
+		display: flex;
+	}
 
-#goodfoot-bg {
-  background-color: #d3492d;
-}
-
-.img-center {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.inactive {
-  color: #969696;
-  border-bottom: none;
-}
-
-.navbar-default {
-  background-color: #fff !important;
-}
-
-.white-bg {
-  background-color: #fff !important;
-}
-
-/* iPhone SE */
-@media only screen
-  and (min-device-width: 320px)
-  and (min-width: 320px)
-  and (max-device-width: 568px)
-  and (max-width: 568px) {
-  .big-text {
-    font-size: 20px;
-  }
-
-  #body-bag {
-    padding: 50px;
-    padding-bottom: 100px;
-  }
-
-  /*#doc-mate {
-    margin-bottom: 50px;
-    width: 100%;
-  }*/
-
-  .footer {
-    bottom: auto;
-    position: absolute;
-  }
-
-  h3 {
-    color: #323232;
-  }
+	.ptn {
+		padding-top: 16px;
+	}
 }
