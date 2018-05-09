@@ -12,6 +12,14 @@
 }
 
 /* SPACING */
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	padding: 0;
+	margin: 0 auto !important;
+}
+
 .pto-h {
 	padding-top: 8px;
 }
@@ -22,6 +30,10 @@
 
 .ptn {
 	padding-top: none;
+}
+
+.ptb {
+	padding: 16px 0;
 }
 
 .ps {
@@ -72,10 +84,18 @@
 	font-size: 12px;
 }
 
-#navigation {
-	background-color: white;
+.header {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+	...
+}
+
+.navigation {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1020;
+	background-color: white;
 	height: 48px;		
 	padding: 16px;
 }
@@ -92,7 +112,7 @@
 	display: grid;
 }
 
-#header, .navbar-expand, .navbar-nav, .navbar-brand, .nav-link {
+.header, .navbar-expand, .navbar-nav, .navbar-brand, .nav-link {
 	padding: 0;
 }
 
@@ -115,7 +135,8 @@ a:active {
 
 .main {
 	background-color: #f0f1f2;
-	margin-bottom: 34px !important;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
 }
 
 .title-link {
@@ -154,24 +175,42 @@ a:active {
 
 .footy {
 	font-size: 12px;
-	height: 34px;
-	margin-bottom: 48px !important;
-	padding-bottom: 48px;
+	height: 48px;
+	margin: 48px 0 !important;
 	text-align: center;
 }
 
 
 
-/* MODIFIED MEDIA QUERIES */
+/* MEDIA QUERIES */
+
 /* SMALL DEVICES  */
 @media (max-width: 567px) {
 	/* FIXED BOTTOM NAV */
-	#navigation {
+	.header {
+		border: none;
+	}
+	.navigation {
 		position: fixed;
+		top: auto;
 		right: 0;
 		bottom: 0;
 		left: 0;
-		z-index: 1020;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		padding: 0 16px !important;
+	}
+
+	.even-nav {
+		display: grid !important;
+	}
+
+	.navbar > .container {
+		justify-content: normal;
+	}
+
+	.ptb {
+		padding: 16px;
 	}
 	
 	/* SCROLL THE NAV */
@@ -196,24 +235,25 @@ a:active {
 	}
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* BIG DEVICES  */
 @media (min-width: 568px) {
-	/* #navigation {
-		position: -webkit-sticky;
-		position: sticky;
-		top: 0;
-		z-index: 1020;
-	} */
-	
 	.navbar {
-		display: inline;
+		display: flex;
+	}
+	
+	.even-nav {
+		display: grid;
 	}
 
-	.even-nav {
-		display: flex;
+	.main {
+		border-top: none;
 	}
 
 	.ptn {
 		padding-top: 16px;
+	}
+
+	.footy {
+		margin-bottom: 0 !important;
 	}
 }
