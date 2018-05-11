@@ -15,8 +15,8 @@
 
 .container {
 	width: 100%;
-	max-width: 960px;
-	padding: 0;
+	max-width: 1440px;
+	padding: 16px;
 	margin: 0 auto !important;
 }
 
@@ -97,7 +97,7 @@
 	z-index: 1020;
 	background-color: white;
 	height: 48px;		
-	padding: 16px;
+	padding: 16px !important;
 }
 
 .nav-link {
@@ -173,6 +173,25 @@ a:active {
 	height: 100%;
 }
 
+.detail {
+	display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.cta {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn, .btn-primary {
+	border-radius: 0px;
+    background-color: white;
+    border-color: black;
+    color: black;
+    padding: .5rem 2.5rem;
+}
+
 .footy {
 	font-size: 12px;
 	height: 48px;
@@ -198,7 +217,6 @@ a:active {
 		left: 0;
 		border-top: 1px solid black;
 		border-bottom: 1px solid black;
-		padding: 0 16px !important;
 	}
 
 	.even-nav {
@@ -211,6 +229,10 @@ a:active {
 
 	.ptb {
 		padding: 16px;
+	}
+
+	#ptn-m {
+		padding-top: 0px;
 	}
 	
 	/* SCROLL THE NAV */
@@ -232,6 +254,10 @@ a:active {
 	/* 2-COLUMN GRID */
 	.half-grid {
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.btn {
+		display: none;
 	}
 }
 
