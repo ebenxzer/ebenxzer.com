@@ -4,7 +4,7 @@
 } */
 
 * {
-	color: #323232;
+	color: #1e1e1e;
 	font-family: Helvetica Neue, sans-serif;
 	letter-spacing: 0.5px;
 	line-height: 1;
@@ -15,7 +15,7 @@
 
 .container {
 	width: 100%;
-	max-width: 1440px;
+	max-width: 1200px;
 	padding: 16px;
 	margin: 0 auto !important;
 }
@@ -85,8 +85,8 @@
 }
 
 .header {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid #1e1e1e;
+	border-bottom: 1px solid #1e1e1e;
 	...
 }
 
@@ -108,6 +108,10 @@
 	justify-content: space-between;
 }
 
+#last-link {
+	padding: 0 !important;
+}
+
 .even-nav {
 	display: grid;
 }
@@ -125,18 +129,18 @@ a {
 }
 
 a:active {
-	color: black;
+	color: #1e1e1e;
 }
 
 ::selection {
-	background-color: black;
+	background-color: #1e1e1e;
 	color: white;
 }
 
 .main {
 	background-color: #f0f1f2;
-	border-bottom: 1px solid black;
-	border-top: 1px solid black;
+	border-bottom: 1px solid #1e1e1e;
+	border-top: 1px solid #1e1e1e;
 }
 
 .title-link {
@@ -153,7 +157,7 @@ a:active {
 }
 
 .thumbnail {
-	border: 1px solid black;
+	border: 1px solid #1e1e1e;
 	margin-bottom: 0.5rem !important;
 }
 
@@ -187,8 +191,8 @@ a:active {
 .btn, .btn-primary {
 	border-radius: 0px;
     background-color: white;
-    border-color: black;
-    color: black;
+    border-color: #1e1e1e;
+    color: #1e1e1e;
     padding: .5rem 2.5rem;
 }
 
@@ -215,8 +219,8 @@ a:active {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
+		border-top: 1px solid #1e1e1e;
+		border-bottom: 1px solid #1e1e1e;
 	}
 
 	.even-nav {
@@ -225,6 +229,10 @@ a:active {
 
 	.navbar > .container {
 		justify-content: normal;
+	}
+
+	.right-side {
+		display: none;
 	}
 
 	.ptb {
