@@ -214,6 +214,11 @@ a:active {
 /* SMALL DEVICES  */
 @media (max-width: 767px) {
 	/* FIXED BOTTOM NAV */
+	
+	.logo {
+		display: none;
+	}
+
 	.header {
 		border: none;
 	}
