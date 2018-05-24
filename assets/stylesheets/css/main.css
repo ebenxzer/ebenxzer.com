@@ -12,7 +12,6 @@
 }
 
 /* SPACING */
-
 .container {
 	width: 100%;
 	max-width: 1200px;
@@ -44,9 +43,13 @@
 	padding: 1em 16px;
 }
 
+.navbar {
+	padding: 0;
+}
+
 /* HEADERS */
 .eg-h1 {
-	font-size: 30px;
+	font-size: 31px;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -96,8 +99,7 @@
 	top: 0;
 	z-index: 1020;
 	background-color: white;
-	height: 48px;		
-	padding: 16px !important;
+	height: 48px;
 }
 
 .nav-link {
@@ -108,21 +110,21 @@
 	justify-content: space-between;
 }
 
-#first-link {
+.link-space {
 	padding: 0 16px !important;
 }
 
-#last-link {
-	padding: 0 !important;
+.view-link {
+	padding-left: 16px;
 }
 
 .even-nav {
 	display: grid;
 }
 
-.header, .navbar-expand, .navbar-nav, .navbar-brand, .nav-link {
-	padding: 0;
-}
+/* .header, .navbar-expand, .navbar-nav, .navbar-brand, .nav-link {
+	padding: 0 !important;
+} 
 
 /* .nav-item {
 	padding-right: 16px;
@@ -147,9 +149,14 @@ a:active {
 	border-top: 1px solid #1e1e1e;
 }
 
+.main-2 {
+	background-color: #f0f1f2;
+	border-bottom: 1px solid #1e1e1e;
+}
+
 .title-link {
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 	justify-content: space-between;
 }
 
@@ -214,7 +221,7 @@ a:active {
 /* SMALL DEVICES  */
 @media (max-width: 767px) {
 	/* FIXED BOTTOM NAV */
-	
+
 	.logo {
 		display: none;
 	}
@@ -286,6 +293,10 @@ a:active {
 	.navbar {
 		display: flex;
 	}
+
+	#first-link {
+		padding: 0 16px !important;
+	}
 	
 	.even-nav {
 		display: grid;
@@ -295,8 +306,17 @@ a:active {
 		border-top: none;
 	}
 
+	.pte {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
 	.ptn {
 		padding-top: 16px;
+	}
+
+	.title-link {
+		justify-content: normal;
 	}
 
 	.footy {
