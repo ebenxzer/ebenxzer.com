@@ -19,6 +19,10 @@
 	margin: 0 auto !important;
 }
 
+.pto-q {
+	padding-top: 4px;
+}
+
 .pto-h {
 	padding-top: 8px;
 }
@@ -82,14 +86,22 @@
 	font-size: 14px;
 }
 
+.toggle {
+	font-size: 12px;
+}
+
+.grey {
+	color: #666;
+}
+
 .hashtag {
 	color: #969696;
 	font-size: 12px;
 }
 
 .header {
-	border-top: 1px solid #1e1e1e;
-	border-bottom: 1px solid #1e1e1e;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
 	...
 }
 
@@ -143,15 +155,18 @@ a:active {
 	color: white;
 }
 
+.active {
+	color: #1e1e1e;
+}
+
 .main {
-	background-color: #f0f1f2;
-	border-bottom: 1px solid #1e1e1e;
-	border-top: 1px solid #1e1e1e;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
 }
 
 .main-2 {
 	background-color: #f0f1f2;
-	border-bottom: 1px solid #1e1e1e;
+	border-bottom: 1px solid #e6e6e6;
 }
 
 .title-link {
@@ -200,10 +215,10 @@ a:active {
 }
 
 .btn, .btn-primary {
-	border-radius: 0px;
-    background-color: white;
-    border-color: #1e1e1e;
-    color: #1e1e1e;
+	border-radius: 2px;
+    background-color: black;
+    border-color: transparent;
+    color: white;
     padding: .5rem 2.5rem;
 }
 
@@ -235,8 +250,8 @@ a:active {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		border-top: 1px solid #1e1e1e;
-		border-bottom: 1px solid #1e1e1e;
+		border-top: 1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6;
 	}
 
 	.even-nav {
