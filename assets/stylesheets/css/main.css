@@ -2,7 +2,6 @@
 * {
 	outline: 1px solid red !important;
 } */
-
 * {
 	color: #1e1e1e;
 	font-family: Helvetica Neue, sans-serif;
@@ -17,6 +16,15 @@
 	max-width: 1200px;
 	padding: 16px;
 	margin: 0 auto !important;
+}
+
+.m-center {
+	margin: 0 auto !important;
+}
+
+.image {
+	margin: 0 auto !important;
+	max-width: 1200px;
 }
 
 .pto-q {
@@ -43,12 +51,24 @@
 	margin-bottom: 8px !important;
 }
 
+.mb {
+	margin-bottom: 16px !important;
+}
+
 .ps {
 	padding: 0 16px;
 }
 
 .pts {
+	padding: 1em 16px 0;
+}
+
+.ptbs {
 	padding: 1em 16px;
+}
+
+.pl {
+	padding-left: 16px;
 }
 
 .navbar {
@@ -81,17 +101,31 @@
 	font-size: 16px;
 }
 
-.bl {
+.black-link {
+	color: #1e1e1e;
+}
+
+.blue-link {
 	color: #0D68AB;
+	cursor: pointer;
 	text-decoration: underline;
+}
+
+.blue-link:hover {
+	color: #1e1e1e;
 }
 
 .body {
 	font-size: 14px;
 }
 
+.toggle-title {
+	font-weight: 500;
+}
+
 .toggle {
 	font-size: 12px;
+	font-weight: normal;
 }
 
 .grey {
@@ -130,10 +164,6 @@
 	padding: 0 16px !important;
 }
 
-.view-link {
-	padding-left: 16px;
-}
-
 .even-nav {
 	display: grid;
 }
@@ -151,6 +181,10 @@ a {
 }
 
 a:active {
+	color: #1e1e1e;
+}
+
+a:hover {
 	color: #1e1e1e;
 }
 
@@ -180,16 +214,29 @@ a:active {
 }
 
 .title-top {
+	padding: 16px 0 0 16px;
 	position: absolute;
-	top: 16px;
-	left: 16px;
 }
 
-.half-grid {
+/* GRIDS */
+.three-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	grid-gap: 16px;
+}
+
+.two-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 16px;
+	width: calc(100%/2);
+}
+
+/* IMAGES */
+.border {
+	border: 1px solid #1e1e1e !important
 }
 
 .thumbnail {
@@ -198,6 +245,7 @@ a:active {
 }
 
 .square {
+	max-height: 400px;
 	width: 100%;
 }
 
@@ -229,12 +277,18 @@ a:active {
 	justify-content: space-between;
 }
 
+/* BUTTONS */
 .btn, .btn-primary {
 	border-radius: 2px;
     background-color: black;
     border-color: transparent;
     color: white;
     padding: .5rem 2.5rem;
+}
+
+.btn:hover, .btn-primary:hover {
+	background-color: rgba(0,0,0,0.5);
+	border-color: transparent;
 }
 
 .footy {
@@ -244,9 +298,136 @@ a:active {
 	text-align: center;
 }
 
+/* EXPAND/COLLAPSE TOGGLES */
+/* EXPAND/COLLAPSE IS A CHECKBOX */
+input[type="checkbox"] {
+	display: none;
+}
+
+/* DEFAULT LABEL STYLING + (BLOCK ELEMENT - ignore bc its display: flex)
+.lbl-toggle {
+	cursor: pointer;
+}
+
+/* TRIANGLE
+.lbl-toggle::before {
+	content: ' ';
+	display: inline-block;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid currentColor;
+	vertical-align: middle;
+	margin-right: .7rem;
+	transform: translateY(-2px);
+	transition: transform .25s ease;
+}
+
+/* ROTATE THE TRIANGLE
+.toggle:checked + .lbl-toggle::before {
+	transform: rotate(90deg) translateX(-3px);
+}
+/* ADJUST BOTTOM CORNERS OF TOP DIV WHEN EXPANDED - actually don't need bc white bg but keep anyway
+.toggle:checked + .lbl-toggle {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* INNER CONTENT STYLING - actually don't need bc white bg but keep anyway
+.collapsible-content .content-inner {
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px; 
+}  */
+
+/* HIDDEN BY DEFAULT BC MAX-HEIGHT: 0 */
+.collapsible-content {
+	max-height: 0px;
+	overflow: hidden;
+	padding-bottom: 2px;
+	transition: max-height 500ms ease-in-out;
+}
 
 
-/* MEDIA QUERIES */
+/* GOAL TOGGLE */
+/* SET CONTENT DIV TO HIGH-ENOUGH MAX-HEIGHT TO GROW AND DISPLAY INNER CONTENT */
+#collapsible:checked + .lbl-toggle + .collapsible-content {
+	max-height: 500px;
+}
+
+#collapsible:checked + #toggle-label:after {
+	background: white;
+	color: #0D68AB; 
+	content: "close";
+	cursor: pointer;
+	font-size: 12px;
+	margin-top: 4px;
+	position: absolute;
+	right: 16px;
+	text-decoration: underline;
+}
+
+/* PROCESS TOGGLE */
+/* SET CONTENT DIV TO HIGH-ENOUGH MAX-HEIGHT TO GROW AND DISPLAY INNER CONTENT */
+#collapsible-2:checked + .lbl-toggle + .collapsible-content {
+	max-height: 500px;
+}
+
+#collapsible-2:checked + #toggle-label:after {
+	background: white;
+	color: #0D68AB; 
+	content: "close";
+	cursor: pointer;
+	font-size: 12px;
+	margin-top: 4px;
+	position: absolute;
+	right: 16px;
+	text-decoration: underline;
+}
+
+/* PROTOTYPE TOGGLE */
+/* SET CONTENT DIV TO HIGH-ENOUGH MAX-HEIGHT TO GROW AND DISPLAY INNER CONTENT */
+#collapsible-3:checked + .lbl-toggle + .collapsible-content {
+	max-height: 500px;
+}
+
+#collapsible-3:checked + #toggle-label:after {
+	background: white;
+	color: #0D68AB; 
+	content: "close";
+	cursor: pointer;
+	font-size: 12px;
+	margin-top: 4px;
+	position: absolute;
+	right: 16px;
+	text-decoration: underline;
+}
+
+/* OUTCOME TOGGLE */
+/* SET CONTENT DIV TO HIGH-ENOUGH MAX-HEIGHT TO GROW AND DISPLAY INNER CONTENT */
+#collapsible-4:checked + .lbl-toggle + .collapsible-content {
+	max-height: 500px;
+}
+
+#collapsible-4:checked + #toggle-label:after {
+	background: white;
+	color: #0D68AB; 
+	content: "close";
+	cursor: pointer;
+	font-size: 12px;
+	margin-top: 4px;
+	position: absolute;
+	right: 16px;
+	text-decoration: underline;
+}
+
+.toggle-space {
+	display: flex;
+	align-items: baseline;
+	justify-content: safe;
+}
+
+
+
+/* MEDIA QUERIES ––– MEDIA QUERIES ––– MEDIA QUERIES */
 
 /* SMALL DEVICES  */
 @media (max-width: 767px) {
@@ -289,12 +470,24 @@ a:active {
 		display: none;
 	}
 
+	.mb {
+		margin-bottom: 8px !important
+	}
+
 	.ptb {
 		padding: 16px;
 	}
 
 	#ptn-m {
 		padding-top: 0px;
+	}
+
+	.ps {
+		padding: 0;
+	}
+
+	.pts {
+		padding: inherit;
 	}
 	
 	/* SCROLL THE NAV */
@@ -307,14 +500,29 @@ a:active {
 	.description {
 		text-align: left;
 	}
+
+	.two-grid {
+		width: unset;
+	}
 	
 	/* 2-COLUMN GRID */
-	.half-grid {
+	.three-grid {
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.border {
+		border: none !important;
 	}
 
 	.btn {
 		display: none;
+	}
+	.toggle-space {
+		justify-content: space-between;
+	}
+
+	.recommended {
+		padding: 40px 16px;
 	}
 }
 
@@ -345,8 +553,32 @@ a:active {
 		padding-top: 16px;
 	}
 
+	.pts {
+		padding-top: 40px;
+	}
+
 	.title-link {
 		justify-content: normal;
+	}
+
+	#collapsible:checked + #toggle-label:after {
+    	margin-left: -13px;
+	    position: relative;
+	}
+
+	#collapsible-2:checked + #toggle-label:after {
+    	margin-left: -13px;
+	    position: relative;
+	}
+
+	#collapsible-3:checked + #toggle-label:after {
+    	margin-left: -13px;
+	    position: relative;
+	}
+
+	#collapsible-4:checked + #toggle-label:after {
+    	margin-left: -13px;
+	    position: relative;
 	}
 
 	.footy {
