@@ -13,35 +13,43 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </head>
+
+
 <body>
 	<!-- NAME & BIO -->
-	<div class="container head-area">
-		<div class="text-center">
-			<a class="navbar-brand" href="index.html"><img src="assets/images/logo/ebby-logo.svg" alt="Ebenezer aka Ebby logo"></a>
-		</div>
-		<div class="logo description">
-			<h1 class="eg-h1">Ebenezer Gavieres</h1>
-			<p class="pto-h bio">Experience Designer</p>
-		</div>		
-	</div> <!-- container -->
+	<div class="container p">
+		<div class="cta">
+			<div class="head-area">
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo/ebby-logo.svg" alt="Ebenezer aka Ebby logo"></a>
+			</div>
+			<div class="head-area hide-e">
+				<a href="mailto:ebenezer.gavieres@gmail.com?subject=I&apos;d%20like%20to%20work%20with%20you&amp;body=Hey%20Ebenezer%2C%0A%0AI&apos;m%20reaching%20out%20via%20your%20portfolio%2C%20and%20I&apos;d%20like%20to%20"><img src="assets/images/icons/icon-mail.svg" alt="Contact me"></a>
+			</div>
+			<div class="logo description">
+				<p class="eg-h2">Ebenezer Gavieres</p>
+				<p class="pto-h bio">Experience Designer</p>
+			</div> <!-- .logo -->
+		</div> <!-- .cta -->
+	</div> <!-- .container -->
 
 	<!-- NAVIGATION -->
 	<div class="navigation header navbar navbar-expand">
-		<div class="container even-nav nav navbar-nav-scroll">
+		<div class="even-nav container nav navbar-nav-scroll">
 			<!-- NAVIGATION LIST (LINKS) -->
-			 <div class="left-side">
-			 	<ul class="navbar-nav">
+			<!-- LEFT SIDE NAV -->
+			<div>
+				<ul class="navbar-nav">
 	 				<li class="nav-item">
-	 					<a class="active link-space nav-link" href="#">Work</a>
+	 					<a class="active link-space nav-link" href="#0">Work</a>
 	 				</li>
 	 				<li class="nav-item">
-	 					<a class="nav-link" href="#">Blog</a>
+	 					<a class="nav-link" href="shop.html">Shop</a>
 	 				</li>
 	 				<li class="nav-item">
-	 					<a class="nav-link" href="shop/product-1.html">Shop</a>
+	 					<a class="nav-link" href="#0">Blog</a>
 	 				</li>
 	 				<li class="nav-item">
-	 					<a id="last-link" class="nav-link" href="#">About</a>
+	 					<a class="nav-link" href="mailto:ebenezer.gavieres@gmail.com?subject=I&apos;d%20like%20to%20work%20with%20you&amp;body=Hey%20Ebenezer%2C%0A%0AI&apos;m%20reaching%20out%20via%20your%20portfolio%2C%20and%20I&apos;d%20like%20to%20">Contact</a>
 	 				</li>
 	 				<!-- <form class="form-inline">
 	 					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -49,116 +57,90 @@
 	 				</form> -->
 	 			</ul>
 	 		</div>
-	 		<div class="right-side">
-	 			<ul class="navbar-nav">
+	 		<!-- RIGHT SIDE NAV -->
+	 		<div class="hide">
+	 			<ul class="navbar-nav pr">
 	 				<li class="nav-item">
-	 					<a class="nav-link" href="mailto:ebenezer.gavieres@gmail.com?subject=I&apos;d%20like%20to%20work%20with%20you&amp;body=Hey%20Ebenezer%2C%0A%0AI&apos;m%20reaching%20out%20via%20your%20portfolio%2C%20and%20I&apos;d%20like%20to%20">Contact me!</a>
+	 					<a href="#0"><img src="assets/images/icons/icon-mail.svg" alt="Contact me"></a>
 	 				</li>
 	 			</ul>
 	 		</div>
-		</div> <!-- .header -->
+		</div> <!-- .container -->
 	</div> <!-- .navigation -->
 
+	<!-- HEADER
+	<div class="m-center container-m">
+		<p class="bold pt-e title">Ebenezer is a UX Designer from New Jersey working at TD Ameritrade.</p>
+	</div> -->
+
 	<!-- GRID -->
-	<div class="main">
-		<div class="pte container">
-			<div class="title-link">
+	<div class="pb-e main">
+		<div class="container">
+			
+			<!-- PAGE TITLE -->
+			<div class="m-center container-m ptb-e title-link">
 				<div>
-					<h4 class="eg-h4">Selected Work</h4>
+					<p class="bold title">Selected Work</p>
 				</div>
 				<div class="pl">
 					<a class="blue-link" href="#">View all</a>
 				</div>
 			</div>
-			<!-- WORK -->
-			<div class="three-grid">
-				<div class="pto">
-					<a class="body" href="work/zigzig.html"><img class="square thumbnail mb" src="assets/images/thumbnails/zigzig-sq@2x.png" alt="ZigZig thumbnail"></a>
-					<div class="cta">
-						<div class="detail">
-							<p class="body">ZigZig</p>
-							<div class="hashtags">
-								<a class="hashtag" href="#">#UI</a>
-								<a class="hashtag" href="#">#Desktop</a>
-							</div>
+			
+			<!-- SELECTED WORK -->
+			<div class="m-center container-m one-grid">
+				
+				<!-- ZigZig -->
+				<div class="m-center">
+					<div class="title-top p">
+						<p class="medium">ZigZig</p>
+						<p class="pto-h">Freelance Designer</p>
+						<div>
+							<p class="pto-q">February 2017</p>
 						</div>
-						<a class="btn btn-primary" href="work/zigzig.html">View</a>
 					</div>
+					<a class="body" href="work/zigzig.html"><img class="square thumbnail-round" src="assets/images/thumbnails/zigzig-sq-white-float@2x.png" alt="ZigZig thumbnail"></a>
 				</div>
-				<div class="pto">
-					<a class="body" href="work/goodfoot.html"><img class="square thumbnail mb" src="assets/images/thumbnails/goodfoot-sq@2x.png" alt="Goodfoot thumbnail"></a>
-					<div class="cta">
-						<div class="detail">
-							<a class="black-link body" href="work/goodfoot.html">Goodfoot</a>
-							<div class="hashtags">
-								<a class="hashtag" href="#">#UI</a>
-								<a class="hashtag" href="#">#Mobile</a>
-							</div>
+				
+				<!-- Goodfoot -->
+				<div class="m-center">
+					<div class="title-top p">
+						<p class="medium">Goodfoot</p>
+						<p class="pto-h">Freelance Designer</p>
+						<div>
+							<p class="pto-q">October 2016</p>
 						</div>
-						<a class="btn btn-primary" href="work/goodfoot.html">View</a>
 					</div>
+					<a class="body" href="work/goodfoot.html"><img class="square thumbnail-round" src="assets/images/thumbnails/goodfoot-sq-blue-white-float@2x.png" alt="Appeagle thumbnail"></a>
 				</div>
-				<div id="ptn-m" class="pto">
-					<a class="body" href="work/appeagle.html"><img class="square thumbnail mb" src="assets/images/thumbnails/appeagle-sq@2x.png" alt="Appeagle thumbnail"></a>
-					<div class="cta">
-						<div class="detail">
-							<p class="body">Appeagle</p>
-							<div class="hashtags">
-								<a href="#" class="hashtag">#UX</a>
-								<a class="hashtag" href="#">#UI</a>
-								<a class="hashtag" href="#">#Desktop</a>
-							</div>
+				
+				<!-- Appeagle -->
+				<div class="m-center">
+					<div class="title-top p">
+						<p class="medium">Appeagle</p>
+						<p class="pto-h">UX Designer</p>
+						<div>
+							<p class="pto-q">March 2016</p>
 						</div>
-						<a class="btn btn-primary" href="work/appeagle.html">View</a>
 					</div>
+					<a class="body" href="work/appeagle.html"><img class="square thumbnail-round" src="assets/images/thumbnails/appeagle-sq-white-float@2x.png" alt="Appeagle thumbnail"></a>
 				</div>
-				<div id="ptn-m" class="ptn">
-					<a class="body" href="work/linute.html"><img class="square thumbnail mb" src="assets/images/thumbnails/linute-sq@2x.png" alt="Linute thumbnail"></a>
-					<div class="cta">
-						<div class="detail">
-							<p class="body">Linute</p>
-							<div class="hashtags">
-								<a href="#" class="hashtag">#UX</a>
-								<a class="hashtag" href="#">#UI</a>
-							</div>
+				
+				<!-- Linute -->
+				<div class="m-center">
+					<div class="title-top p">
+						<p class="medium">Linute</p>
+						<p class="pto-h">UX/UI Designer</p>
+						<div>
+							<p class="pto-q">November 2015</p>
 						</div>
-						<a class="btn btn-primary" href="work/linute.html">View</a>
 					</div>
+					<a class="body" href="work/appeagle.html"><img class="square thumbnail-round" src="assets/images/thumbnails/linute-sq-white-float@2x.png" alt="Appeagle thumbnail"></a>
 				</div>
+
 			</div> <!-- .three-grid -->
 		</div> <!-- .container -->
 	</div> <!-- .main -->
-	
-	<!-- uncomment when section is built --
-	<!-- GRID --
-	<div class="main-2">
-		<div class="pte container">
-			<div class="title-link">
-				<div>
-					<h4 class="eg-h4">Shop</h4>
-				</div>
-				<div class="pl">
-					<a class="blue-link" href="#">View all</a>
-				</div>
-			</div>
-			<!-- STUFF I'M WORKING ON --
-			<div class="three-grid">
-				<div class="pto">
-					<a class="body" href="shop/product-1.html"><img class="square thumbnail mb" src="assets/images/thumbnails/zigzig-sq@2x.png" alt="ZigZig image"></a>
-					<div class="cta">
-						<div class="detail">
-							<p class="body">ZigZig</p>
-							<div class="hashtags">
-								<a class="hashtag" href="#">#UI</a>
-								<a class="hashtag" href="#">#Desktop</a>
-							</div>
-						</div>
-						<a class="btn btn-primary" href="#">View</a>
-					</div>
-				</div> <!-- .pto --
-			</div> <!-- .three-grid --
-		</div> <!-- .container --
-	</div> <!-- .main-2-->
 
 	<footer class="footy">
 		<a href="mailto:ebenezer.gavieres@gmail.com?subject=I&apos;d%20like%20to%20work%20with%20you&amp;body=Hey%20Ebenezer%2C%0A%0AI&apos;m%20reaching%20out%20via%20your%20portfolio%2C%20and%20I&apos;d%20like%20to%20">email</a>
