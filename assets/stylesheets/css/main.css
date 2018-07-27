@@ -480,7 +480,7 @@ a:hover {
 }
 
 .main {
-	background-color: var(--blue-grey);
+	background-color: var(--bg-light-grey);
 	border-top: var(--border-grey);
 	border-bottom: var(--border-grey);
 }
