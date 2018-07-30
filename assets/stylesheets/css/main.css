@@ -10,7 +10,13 @@
 	margin: 0 !important;
 	will-change: padding;
 	transition: padding 250ms ease;
+
 	/* for layout testing uncomment this--> outline: 1px solid red !important; */
+}
+
+html, body {
+	background-color: var(--white, white);
+	color: var(--black, black);
 }
 
 
@@ -308,7 +314,7 @@ a:active {
 a:hover {
 	color: var(--black);
 	text-decoration: underline !important;
-	text-underline-position: under;
+	text-underline-position: under ;
 }
 
 
@@ -320,6 +326,10 @@ a:hover {
 
 .description {
 	text-align: right;
+}
+
+#ebby-des {
+	display: none;
 }
 
 .title-link {
