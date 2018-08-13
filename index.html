@@ -14,22 +14,17 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </head>
 
-
 <body>
 	<!-- NAME & BIO -->
 	<div class="container p">
-		<div class="cta">
+		<div class="top-area">
 			<div class="head-area">
 				<a class="navbar-brand" href="index.html"><img src="assets/images/logo/ebby-logo.svg" alt="Ebenezer aka Ebby logo"></a>
 			</div>
 			<div class="head-area hide-e">
 				<a href="mailto:ebenezer.gavieres@gmail.com?subject=I&apos;d%20like%20to%20work%20with%20you&amp;body=Hey%20Ebenezer%2C%0A%0AI&apos;m%20reaching%20out%20via%20your%20portfolio%2C%20and%20I&apos;d%20like%20to%20"><img src="assets/images/icons/icon-mail.svg" alt="Contact me"></a>
 			</div>
-			<div class="logo description">
-				<p class="eg-h2">Ebenezer Gavieres</p>
-				<p class="pto-h bio">Experience Designer</p>
-			</div> <!-- .logo -->
-		</div> <!-- .cta -->
+		</div> <!-- .top-area -->
 	</div> <!-- .container -->
 
 	<!-- NAVIGATION -->
@@ -42,14 +37,19 @@
 	 				<li class="nav-item">
 	 					<a class="link-space nav-link" href="#work">Work</a>
 	 				</li>
+	 				<!-- UNCOMMENT WHEN YOU HAVE SOME WRITING
 	 				<li class="nav-item">
 	 					<a class="nav-link" href="#writing">Writing</a>
-	 				</li>
+	 				</li> -->
+	 				<!-- UNCOMMENT WHEN YOU HAVE SOME MERCH TO SELL
 	 				<li class="nav-item">
 	 					<a class="nav-link" href="#0">Shop</a>
-	 				</li>
+	 				</li> -->
 	 				<li class="nav-item">
 	 					<a class="nav-link" href="#about">About</a>
+	 				</li>
+	 				<li class="nav-item">
+	 					<a class="nav-link" href="mailto:ebenezer.gavieres@gmail.com?subject=I&apos;d%20like%20to%20work%20with%20you&amp;body=Hey%20Ebenezer%2C%0A%0AI&apos;m%20reaching%20out%20via%20your%20portfolio%2C%20and%20I&apos;d%20like%20to%20">Contact</a>
 	 				</li>
 	 				<!-- <form class="form-inline">
 	 					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -70,11 +70,19 @@
 	 		</div>
 		</div> <!-- .container -->
 	</div> <!-- .navigation -->
+
+	<!-- hiding until i figure it out
+	BUTTON 
+	<div class="theme p container">
+	  <button value="dark">dark</button>
+	  <button value="calm">calm</button>
+	  <button value="light">light</button>
+	</div> -->
 	
-	<!-- HEADER -->
+	<!-- HEADER
 	<div id="ebby-des" class="m-center container">
 		<p class="bold pt-e title">Ebenezer is a UX Designer from New Jersey working at TD Ameritrade.</p>
-	</div>
+	</div> -->
 
 	<!-- CONTENT -->
 	<div class="mt-neg main">
@@ -83,96 +91,132 @@
 			<!-- SELECTED WORK -->
 			<div id="work" class="m-center container ptb-e title-link">
 				<div>
-					<p class="eg-h2">Selected Work</p>
+					<p class="pr eg-h2">Work</p>
 				</div>
 				<!-- <div class="pl">
 					<a class="blue-link" href="work.html">View all</a>
 				</div> -->
+
+			<div class="hide-e dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Show all
+			  </button>
+
+			  <div class="mt-q dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+			    <a class="active dropdown-item" href="#">Show all</a>
+			    <div class="dropdown-divider"></div>
+			    <a class="dropdown-item" href="#">Animations</a>
+			    <div class="dropdown-divider"></div>
+			    <a class="dropdown-item" href="#">Desktop</a>
+			    <div class="dropdown-divider"></div>
+			    <a class="dropdown-item" href="#">Illustrations</a>
+			    <div class="dropdown-divider"></div>
+			    <a class="dropdown-item" href="#">Mobile</a>
+			    <div class="dropdown-divider"></div>
+			    <a class="dropdown-item" href="#">Side Projects</a>
+			    <div class="dropdown-divider"></div>
+			    <a class="dropdown-item" href="#">Videos</a>
+			  </div>
+			</div>
+			</div>
+
+			<!-- FILTERS -->
+			<div class="hide pb-e">
+				<p id="filter" class="shmedium">Filter:</p> 
+				<a class="active" href="#0">Show All</a> / 
+				<a href="#0">Animations</a> / 
+				<a href="#0">Desktop</a> / 
+				<a href="#0">Illustrations</a> / 
+				<a href="#0">Mobile</a> / 
+				<a href="#0">Side Projects</a> / 
+				<a href="#0">Videos</a>
 			</div>
 			
 			<!-- GRID -->
-			<div class="four-grid pb-e m-center">
+			<div class="three-grid pb-e m-center">
 				
 				<!-- ZigZig -->
-				<div>
-					<a class="body" href="work/zigzig.html"><img class="square thumbnail-round" src="assets/images/thumbnails/zigzig-sq-grey-float@2x.png" alt="ZigZig thumbnail"></a>
-				<div class="thumbnail-bottom-round swatch p hide">
-					<p class="eg-h3">ZigZig</p>
-					<p class="mt-h">Freelance Designer</p>
-					<div>
+				<a class="black-link" href="work/zigzig.html">
+					<div id="zigzig" class="square thumbnail-round" alt="ZigZig thumbnail">
+					</div>
+
+					<div class="thumbnail-bottom-round swatch p hide">
+						<p class="eg-h3">ZigZig</p>
+						<p class="pto-h">Freelance Designer</p>
 						<p class="pto-h">February 2017</p>
 					</div>
-				</div>
-				</div>
+				</a>
 				
 				<!-- Goodfoot -->
-				<div>
-					<a class="body" href="work/goodfoot.html"><img class="square thumbnail-round" src="assets/images/thumbnails/goodfoot-sq-grey-float@2x.png" alt="Goodfoot thumbnail"></a>
+				<a class="black-link" href="work/goodfoot.html">
+					<div id="goodfoot" class="square thumbnail-round" alt="Goodfoot thumbnail">
+					</div>
+
 					<div class="thumbnail-bottom-round swatch p hide">
 						<p class="eg-h3">Goodfoot</p>
-						<p class="mt-h">Freelance Designer</p>
-						<div>
-							<p class="pto-h">October 2016</p>
-						</div>
+						<p class="pto-h">Freelance Designer</p>
+						<p class="pto-h">October 2016</p>
 					</div>
-				</div>
+				</a>
 				
 				<!-- Appeagle -->
-				<div class="hide">
-					<a class="body" href="work/appeagle.html"><img class="square thumbnail-round" src="assets/images/thumbnails/appeagle-sq-grey-float@2x.png" alt="Appeagle thumbnail"></a>
+				<a class="hide black-link" href="work/appeagle.html">
+					<div id="appeagle" class="square thumbnail-round" alt="Appeagle thumbnail">
+					</div>
+
 					<div class="thumbnail-bottom-round swatch p hide">
 						<p class="eg-h3">Appeagle</p>
-						<p class="mt-h">UX Designer</p>
-						<div>
-							<p class="pto-h">March 2016</p>
-						</div>
+						<p class="pto-h">UX Designer</p>
+						<p class="pto-h">March 2016</p>
 					</div>
-				</div>
+				</a>
 
 				<!-- Linute -->
-				<div class="hide">
-					<a class="body" href="work/linute.html"><img class="square thumbnail-round" src="assets/images/thumbnails/linute-sq-grey-float@2x.png" alt="Linute thumbnail"></a>
+				<a class="hide black-link" href="work/linute.html">
+					<div id="linute" class="square thumbnail-round" alt="Linute thumbnail">
+					</div>
+
 					<div class="thumbnail-bottom-round swatch p hide">
 						<p class="eg-h3">Linute</p>
-						<p class="mt-h">UX/UI Designer</p>
-						<div>
-							<p class="pto-h">November 2015</p>
-						</div>
+						<p class="pto-h">UX/UI Designer</p>
+						<p class="pto-h">November 2015</p>
 					</div>
-				</div>
+				</a>
 
 			</div> <!-- .three-grid -->
 		</div> <!-- .container -->
 	</div> <!-- .main -->
 
+	<!-- WRITING
 	<div class="mt-neg main">
 		<div class="container">
 			
-			<!-- WRITING -->
+			<!-- WRITING --
 			<div id="writing" class="m-center container ptb-e title-link">
 				<div>
 					<p class="eg-h2">Writing</p>
 				</div>
 			</div>
 			
-			<!-- WRITING-PARAGRAPH -->
+			<!-- WRITING-PARAGRAPH --
 			<div class="pb-e m-center">
-				<p class="medium">
-					<a href="#0">Post Title</a>
+				<p class="shmedium">
+					<a class="black-link" href="#0">Post Title</a>
 				</p>
 				<p class="grey mt-h">Month Day, Year</p>
-			</div> <!-- .m-center -->
+			</div> <!-- .m-center --
 
 			<div class="pb-e m-center">
-				<p class="medium">
-					<a href="#0">Post Title</a>
+				<p class="shmedium">
+					<a class="black-link" href="#0">Post Title</a>
 				</p>
 				<p class="grey mt-h">Month Day, Year</p>
-			</div> <!-- .m-center -->
+			</div> <!-- .m-center --
 
-		</div> <!-- .container -->
+		</div> <!-- .container --
 	</div> <!-- .mt-neg -->
 
+	<!-- ABOUT -->
 	<div class="mt-neg main">
 		<div class="container">
 			
@@ -185,11 +229,11 @@
 			
 			<!-- ABOUT-PARAGRAPH -->
 			<div class="pb-e m-center">
-				<p>Hi, I'm Ebby 👋. As written above, I’m a UX designer at <a href="https://www.tdameritrade.com">TD Ameritrade</a>  working on the TDAx team. Previously, I worked at <a href="https://www.informed.co/" title="Informed, formerly known as Appeagle">Informed.co</a> as their first UX designer. Here's a link to my <a href="https://drive.google.com/file/d/0B0a_aoJqeZBdTlRRZVNIQVBhUFE/view" target="_blank" title="Ebenezer's PDF portfolio">portfolio</a>.</p>
+				<p>I'm Ebby 👋, I’m a UX designer at <a class="black-link" href="https://www.tdameritrade.com">TD Ameritrade</a>. Previously, I worked at <a class="black-link" href="https://www.informed.co/" title="Informed, formerly known as Appeagle">Informed.co</a> as their first UX designer. Here's a link to my <a class="black-link" href="https://drive.google.com/file/d/0B0a_aoJqeZBdTlRRZVNIQVBhUFE/view" target="_blank" title="Ebenezer's PDF portfolio">portfolio</a>.</p>
 
-				<p class="mt">You might catch me thinking about ways to improve the usability, architecture, and overall experience of products through research-driven design. You will definitely catch me shopping for shoes or hanging out with my dog, <a href="https://www.instagram.com/oreo_meets_world/" title="@oreo_meets_world">Oreo</a>.</p>
+				<p class="mt">I like thinking about ways to improve the usability, architecture, and overall experience of products through research-driven design, sneakers, and my dog named <a class="black-link" href="https://www.instagram.com/oreo_meets_world/" title="@oreo_meets_world">Oreo</a>.</p>
 
-				<p class="mt">I'm available on <a title="@ebenxzer on Twitter" href="https://twitter.com/ebenxzer" data-mce-href="https://twitter.com/ebenxzer">Twitter</a>, <a data-mce-href="http://www.instagram.com/ebenxzer" href="http://www.instagram.com/ebenxzer" title="@ebenxzer on Instagram">Instagram</a>, and good ol' <a href="https://www.ebenezergavieres.com/mailto:ebenezer.gavieres@gmail.com?subject=I&apos;d%20like%20to%20work%20with%20you&amp;body=Hey%20Ebenezer%2C%0A%0AI&apos;m%20reaching%20out%20via%20your%20portfolio%2C%20and%20I&apos;d%20like%20to%20" title="click here to open up your device's email service">email</a>. To inquire about my freelance availability, <a href="https://www.ebenezergavieres.com/mailto:ebenezer.gavieres@gmail.com?subject=I&apos;d%20like%20to%20work%20with%20you&amp;body=Hey%20Ebenezer%2C%0A%0AI&apos;m%20reaching%20out%20via%20your%20portfolio%2C%20and%20I&apos;d%20like%20to%20" title="click here to open up your device's email service">click here</a>.</p>
+				<p class="mt">If you're interested in working with me—I'm on <a class="black-link" href="https://twitter.com/ebenxzer" title="@ebenxzer on Twitter">Twitter</a>, <a class="black-link" href="http://www.instagram.com/ebenxzer" title="@ebenxzer on Instagram">Instagram</a>, or you can reach out via good ol' <a class="black-link" href="https://www.ebenezergavieres.com/mailto:ebenezer.gavieres@gmail.com?subject=I&apos;d%20like%20to%20work%20with%20you&amp;body=Hey%20Ebenezer%2C%0A%0AI&apos;m%20reaching%20out%20via%20your%20portfolio%2C%20and%20I&apos;d%20like%20to%20" title="click here to open up your device's email service">email</a>.
 				</p>
 			</div> <!-- .m-center -->
 
