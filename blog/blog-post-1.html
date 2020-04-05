@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Ebenezer G.">
@@ -15,60 +15,77 @@
 </head>
 
 <body>
-	<div class="container-fluid--np d-flex mx-auto flex-column">
+	<div class="container-fluid--no-padding">
 
 		<!-- Navigation -->
-		<div class="container-fluid container--mw d-flex flex-column pl-3 pr-3">
-			<header class="pt-3 masthead mb-3">
+		<div class="container-fluid container--max-width d-flex flex-column">
+			<header class="pt-3 pb-3">
 		    <div class="text-center">
-	    		<h1 class="h3 masthead-brand pt-1 font-weight-bolded"><a href="../index.html" class="link--black">EBENEZER</a></h1>
+	    		<div class="h3 font-weight-bolded masthead-brand"><a href="../blog.html" class="text-black a--none">EBENEZER</a></div>
 		      	<nav class="nav nav-masthead justify-content-center">
 		      		<!-- <a class="nav-link" href="#">Work</a> -->
-			        <a class="nav-link active" href="../index.html">Blog</a>
-			        <a class="nav-link" href="../index.html#meet-ebenezer">About</a>
+			        <a class="nav-link font-weight-medium a--none-grey" href="../blog.html">Writing</a>
+			        <a class="nav-link font-weight-medium a--none-grey" href="../blog.html#meet-ebenezer">About</a>
 		      	</nav>
 	    	</div>
 	  	</header>
 		</div>
+		<div class="border--bottom-black"></div>
 
 	<!-- Blog -->
-	<div class="container-fluid container--mw mb-5 pl-3 pr-3">
+	<div class="container-fluid container--max-width pt-5 pr-3 pb-5 pl-3">
 		<!-- Blog content -->
-		<h2 class="h4 font-weight-bold pt-5 pl-0">Redesigning my portfolio</h2>
-		<h3 class="h6 mb-4 pl-0" style="color: var(--gray);">March 24, 2020</h3>
-			<p>While the "Rona" running rampant across the globe, I'm using this blog as a means to practice web development as well as to document the progress of updating my portfolio into a simpler profile.
-			<br>
-			<br>
-			For years, I've been struggling with crippling procrastination paired with the need to be perfect which is not a real thing. I want to show my progress and keep myself accountable by creating in the "public".
+		<h1 class="h2 font-weight-semi-bold mt-5 pl-0">Redesigning My Portfolio</h1>
+			<h2 class="text-secondary h6 mb-5 pl-0">March 24, 2020<em class="text-blue font-weight-semi-bold pl-3">Updated April 1, 2020</em></h2>
+		<!-- Intro paragraph -->
+		<div class="mb-5">
+			<p>With the "Rona" running rampant across the globe, I'm using my time indoors to create this blog as a means to practice web development and to document the progress of transforming this site into a portfolio of which I have full control over.
 			</p>
-			<!-- tags -->
-  		<div class="mt-3 tag--pale-grey border--rounded"><a href="#" class="text-white">#firstblogpost</a></div>
-  		<div class="mt-3 tag--pale-grey border--rounded"><a href="#" class="text-white">#redesign</a></div>
-
-		<div class="h6 pt-5">
-			<a href="../index.html" class="link--blue">< Back to homepage</a></h1>
 		</div>
 
+		<h3 class="h5 font-weight-medium mb-3 pl-0">Why are you doing this?</h3>
+		<div class="mb-5">
+			<p>For years, I've been struggling with the crippling need to be perfect paired with procrastination. I want to show my progress and more than anything, build for fun and keep myself accountable by creating in the "public". My primary goal is to showcase my technical chops to go with my design skills.
+			</p>
+		</div>
+
+		<h4 class="h5 font-weight-medium mb-3 pl-0">Approach</h4>
+		<div>
+			<p>As of this writing, the entire site is built using HTML/CSS and very little JavaScript. You can <a href="#">look at the source code here</a>. 
+			</p>
+		</div>
+		
+		<!-- tags -->
+		<div class="mt-3">
+			<a href="#" class="small text-dark-grey a--none-transparent">#firstblogpost</a>
+			<a href="#" class="small text-dark-grey a--none-transparent ml-3">#redesign</a>
+		</div>
+
+		<div class="h6 mt-5">
+			<a href="../blog.html" class="text-red a--none-transparent">< Back to blog</a></h1>
+		</div>
 	</div> <!-- .container-fluid -->
 
-	<!-- Footer -->
-	<footer class="footer--absolute pt-5 pb-5" >
-    <div class="container-fluid container--mw mx-auto row">
-    	<div class="col-md-8 pl-0 pr-0">
-  			<p>© 2020 Ebenezer Gavieres</p>
-    	</div>
-    	<!-- <div class="col-md-4 pl-0 pr-0">
-    		<div class="text-md-center">
-    			<a href="#">Email</a> · <a href="#">Instagram</a> · <a href="#">Twitter</a>
-    		</div>
-    	</div> -->
-    	<div class="col-md-4 pl-0 pr-0">
-    		<div class="float-md-right">
-    			<a href="#">Back to top</a>
-    		</div>
-    	</div>
-    </div>
-	</footer>
+
+		<!-- Footer -->
+		<footer class="footer--relative pt-5 pr-3 pb-5 pl-3" >
+	    <div class="container-fluid--no-padding container--max-width row jumbotron--side-padding">
+	    	<div class="col-md-8 pl-0 pr-0">
+	  			<p>© 2020 Ebenezer Gavieres 👋🏼</p>
+	    	</div>
+	    	<!-- <div class="col-md-4 pl-0 pr-0">
+	    		<div class="text-md-center">
+	    			<a href="#">Email</a> · <a href="#">Instagram</a> · <a href="#">Twitter</a>
+	    		</div>
+	    	</div> -->
+	    	<div class="col-md-4 pl-0 pr-0">
+	    		<div class="float-md-right">
+	    			<a href="#" class="a--none">Back to top 👆🏼</a>
+	    		</div>
+	    	</div>
+	    </div>
+		</footer>
+	</div> <!-- Main container-fluid--no-padding -->
 
 
 	<!-- jQuery -->
