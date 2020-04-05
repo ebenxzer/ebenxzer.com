@@ -5,19 +5,23 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --black: #1e1e1e;
+  --blue: #1573DD;
+  --blue-dark: #1267C6;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
-  --red: #dc3545;
+  --red: #F52E45;
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
+  --grey-x-light: #ddd;
+  --grey-light: #999;
+  --grey: #666;
+  --grey-dark: #333;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -362,7 +366,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 h1, .h1 {
@@ -397,25 +401,25 @@ h6, .h6 {
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 hr {
@@ -5246,7 +5250,6 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
 }
 
 @media (min-width: 576px) {
@@ -10373,6 +10376,10 @@ button.bg-dark:focus {
 
 .font-weight-normal {
   font-weight: 400 !important;
+}
+
+.font-weight-medium {
+  font-weight: 500 !important;
 }
 
 .font-weight-semi-bold {
