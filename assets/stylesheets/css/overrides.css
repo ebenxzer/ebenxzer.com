@@ -435,7 +435,7 @@ a:focus, button:focus {
 }
 
 /* 768px tablet */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer {
     padding-top: 16px !important;
     padding-bottom: 16px !important;
