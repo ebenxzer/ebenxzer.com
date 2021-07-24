@@ -344,10 +344,10 @@ a:focus, button:focus {
 }
 
 /* 768px tablet */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .jumbotron--side-padding {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
 
