@@ -100,6 +100,10 @@ p {
   border-bottom: 2px solid var(--black);
 }
 
+.border--bottom-grey-x-light {
+  border-bottom: 2px solid var(--grey-x-light);
+}
+
 .border--rounded {
   border-radius: 2px;
 }
@@ -323,14 +327,14 @@ a:focus, button:focus {
 /* right before tablet */
 @media (max-width: 767px) {
   .jumbotron {
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
   }
 }
 
 /* 768px tablet */
 @media (min-width: 768px) {
   .jumbotron {
-    padding: 4rem 0 5rem;
+    padding: 7rem 1rem 8rem;
   }
 }
 
