@@ -380,6 +380,14 @@ a:focus, button:focus {
 }
 
 /* Section headers */
+.section-header--black {
+  border: 2px solid var(--black);
+  padding: 4px 8px !important;
+  background: var(--black);
+  color: white;
+  width: max-content;
+}
+
 .section-header--blue {
   border: 2px solid black;
   padding: 4px 8px !important;
