@@ -327,7 +327,7 @@ a:focus, button:focus {
 /* right before tablet */
 @media (max-width: 767px) {
   .jumbotron {
-    padding: 4rem 1rem;
+    padding: 4rem 0rem;
   }
 }
 
